@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #FFF;
+            background: #322f30;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            font: 20px "Lato", sans-serif;
+            text-decoration: none;
+            color: #fff;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin:  1% 0 1% 0;
+        }
+        ._12 {
+            font-size: 1.2em;
+        }
+        ._14 {
+            font-size: 1.4em;
+        }
+        ul {
+            padding:0;
+            list-style: none;
+        }
+        .footer-social-icons {
+            width: 350px;
+            display:block;
+            margin: 0 auto;
+        }
+        .social-icon {
+            color: #fff;
+        }
+        ul.social-icons {
+            margin-top: 10px;
+        }
+        .social-icons li {
+            vertical-align: top;
+            display: inline;
+            height: 100px;
+        }
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .fa-facebook {
+            padding:10px 14px;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+        .fa-facebook:hover {
+            background-color: #3d5b99;
+        }
+        .fa-instagram {
+            padding:10px 14px;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+        .fa-instagram:hover {
+            background-color: #ff4dff;
+        }
+        .fa-twitter {
+            padding:10px 12px;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+        .fa-twitter:hover {
+            background-color: #00aced;
+        }
+        .fa-rss {
+            padding:10px 14px;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+        .fa-rss:hover {
+            background-color: #eb8231;
+        }
+        .fa-youtube {
+            padding:10px 14px;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+        .fa-youtube:hover {
+            background-color: #e64a41;
+        }
+        .fa-linkedin {
+            padding:10px 14px;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+        .fa-linkedin:hover {
+            background-color: #0073a4;
+        }
+        .fa-google-plus {
+            padding:10px 9px;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+        .fa-google-plus:hover {
+            background-color: #e25714;
+        }
+        .break{
+            display:block;
+            margin: -25px;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+        .top-right{
+            position: absolute;
+            right: -1064px;
+            top: 0px;
+        }
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            position: relative;
+            opacity: 1;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .bgimg-1 {
+            background-image: url("3.jpg");
+            min-height: 100%;
+        }
+        .bgimg-2 {
+            background-image: url("2.jpg");
+            min-height: 400px;
+        }
+        .bgimg-3 {
+            background-image: url("1.jpg");
+            min-height: 400px;
+        }
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="bgimg-1">
+    <div class=" w3-bar w3-pale-black">
+        <h1 class="w3-bar-item" style="font-family:'Arial Black' ;color: #111111; margin-left: 60px; margin-top: 5px">TINA <span class="break"></span> MOUAWAD</h1>
+        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="contact.html" class="w3-bar-item w3-right"  style="font-family: Verdana;color: goldenrod;
+        font-size: 20px; margin-right: 50px; margin-top: 38px">Contact</a>
+        <a href="about.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"
+            class="w3-bar-item w3-right" style="font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px">About</a>
+        <a style="font-family: Verdana;color: #111111;font-size: 20px; margin-right: 20px; margin-top: 38px" class="w3-bar-item  w3-right">Home</a>
+        <!--href="index.html" class="w3-bar-item  w3-right"-->
+    </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">Parallax Demo</h3>
+    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+</div>
+<div class="bgimg-2">
+    <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+    </div>
+</div>
+<div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+</div>
+<div class="bgimg-3">
+    <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+    </div>
+</div>
+<div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+</div>
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border">COOL!</span>
+    </div>
+</div>
+<div class="footer-social-icons">
+    <h4 class="_14" align="center">Follow me on</h4>
+    <ul class="social-icons" style="text-align: center;">
+        <li><a onclick="window.open('https://www.facebook.com/touty')" class="social-icon" style="cursor:pointer"> <i class="fa fa-facebook"></i></a></li>
+        <li><a onclick="window.open('https://www.instagram.com/antonia_md/')" class="social-icon" style="cursor:pointer"> <i class="fa fa-instagram"></i></a></li>
+        <li><a onclick="window.open('https://twitter.com/AntoniaMouawad/')" class="social-icon" style="cursor:pointer"> <i class="fa fa-twitter"></i></a></li>
+        <!--<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>-->
+        <li><a onclick="window.open('https://www.youtube.com/channel/UCVv2LN0E6w_ux-tryU7dbvg/')" class="social-icon" style="cursor:pointer"> <i class="fa fa-youtube"></i></a></li>
+        <li><a onclick="window.open('https://www.linkedin.com/in/antoniamouawad/')" class="social-icon" style="cursor:pointer"> <i class="fa fa-linkedin"></i></a></li>
+    </ul>
+</div>
+</body>
+</html>
