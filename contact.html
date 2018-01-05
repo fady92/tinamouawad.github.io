@@ -4,10 +4,11 @@
     <title>Tina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="shortcut icon" href="images/tabicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="tabicon.ico" style="visibility: visible">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato);
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
         body {
             font-family: 'Lato', sans-serif;
             color: #FFF;
@@ -205,26 +206,74 @@
                 background-attachment: scroll;
             }
         }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
     </style>
 </head>
 
 <body>
 <div class="bgimg-1">
+    <div class="caption">
+        <span style="font-size: 35px;font-family:'Arial Black'; color: black;"><b>CONTACT</b></span>
+    </div>
     <div class=" w3-bar w3-pale-black">
         <h1 class="w3-bar-item" style="font-family:'Arial Black' ;color: #111111; margin-left: 60px; margin-top: 5px">TINA <span class="break"></span> MOUAWAD</h1>
         <a class="w3-bar-item w3-right"  style="font-family: Verdana;color: black;
-        font-size: 20px; margin-right: 50px; margin-top: 38px">Contact</a>
+        font-size: 20px; margin-right: 50px; margin-top: 38px"><b>Contact</b></a>
         <a href="about.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"
-           class="w3-bar-item w3-right" style="font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px">About</a>
-        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'" href="index.html" style="font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px" class="w3-bar-item  w3-right">Home</a>
+           class="w3-bar-item w3-right" style="font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px"><b>About</b></a>
+        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'" href="index.html" style="font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px" class="w3-bar-item  w3-right"><b>Home</b></a>
         <!--href="index.html" class="w3-bar-item  w3-right"-->
     </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;">Parallax Demo</h3>
-    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+
+<div class="container" style="padding-right: 300px; padding-left: 300px; background-color:white; padding-top: 50px">
+    <form id = gform action="https://script.google.com/macros/s/AKfycbwFMfPJD_COV7kOh1oQ_OGL3hJG1wNOKGsyKx3El8Cl0hbUj2AZ/exec" method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">e-mail</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
 </div>
+
 
 <div class="footer-social-icons">
     <h4 class="_14" align="center">Follow me on</h4>
