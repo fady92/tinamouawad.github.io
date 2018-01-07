@@ -1,253 +1,193 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tina Mouawad</title>
+	<title>Tina Mouawad</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="parallax.css" rel="stylesheet" type="text/css" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="tabicon.ico" style="visibility: visible">
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.3.1/parallax.min.js"></script>
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Lato);
-        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-        body {
-            font-family: 'Lato', sans-serif;
-            color: #FFF;
-            background: #322f30;
-            -webkit-font-smoothing: antialiased;
-        }
-        a {
-            font: 20px "Lato", sans-serif;
-            text-decoration: none;
-            color: #fff;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            margin:  1% 0 1% 0;
-        }
-        ._12 {
-            font-size: 1.2em;
-        }
-        ._14 {
-            font-size: 1.4em;
-        }
-        ul {
-            padding:0;
-            list-style: none;
-        }
-        .footer-social-icons {
-            width: 350px;
-            display:block;
-            margin: 0 auto;
-        }
-        .social-icon {
-            color: #fff;
-        }
-        ul.social-icons {
-            margin-top: 10px;
-        }
-        .social-icons li {
-            vertical-align: top;
-            display: inline;
-            height: 100px;
-        }
-        .social-icons a {
-            color: #fff;
-            text-decoration: none;
-        }
 
-        .fa-facebook {
-            -o-transition:.5s;
-            -ms-transition:.5s;
-            -moz-transition:.5s;
-            -webkit-transition:.5s;
-            transition: .5s;
-            background-color: #322f30;
-        }
-        .fa-facebook:hover {
-        }
+    @import url(https://fonts.googleapis.com/css?family=Lato);
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #FFF;
+        background: #322f30;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+    a {
+        font: 20px "Lato", sans-serif;
+        text-decoration: none;
+        color: #fff;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    margin:  1% 0 1% 0;
+}
+    ._12 {
+    font-size: 1.2em;
+}
+    ._14 {
+    font-size: 1.4em;
+}
+    ul {
+    padding:0;
+    list-style: none;
+}
+    .footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+    .social-icon {
+    color: #fff;
+}
+    ul.social-icons {
+    margin-top: 10px;
+}
+    .social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+    .social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        .fa-instagram {
-            -o-transition:.5s;
-            -ms-transition:.5s;
-            -moz-transition:.5s;
-            -webkit-transition:.5s;
-            transition: .5s;
-            background-color: #322f30;
-        }
-        .fa-instagram:hover {
-        }
+    .fa-facebook {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+    .fa-facebook:hover {
+}
 
-        .fa-twitter {
-            -o-transition:.5s;
-            -ms-transition:.5s;
-            -moz-transition:.5s;
-            -webkit-transition:.5s;
-            transition: .5s;
-            background-color: #322f30;
-        }
-        .fa-twitter:hover {
-        }
+    .fa-instagram {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+    .fa-instagram:hover {
+}
 
-        .fa-youtube {
-            -o-transition:.5s;
-            -ms-transition:.5s;
-            -moz-transition:.5s;
-            -webkit-transition:.5s;
-            transition: .5s;
-            background-color: #322f30;
-        }
-        .fa-youtube:hover {
-        }
+    .fa-twitter {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+    .fa-twitter:hover {
+}
 
-        .fa-linkedin {
-            -o-transition:.5s;
-            -ms-transition:.5s;
-            -moz-transition:.5s;
-            -webkit-transition:.5s;
-            transition: .5s;
-            background-color: #322f30;
-        }
-        .fa-linkedin:hover {
-        }
+    .fa-youtube {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+    .fa-youtube:hover {
+}
 
-        .break{
-            display:block;
-            margin: -25px;
-        }
-        body, html {
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
-        }
-        .top-right{
-            position: absolute;
-            right: -1064px;
-            top: 0px;
-        }
-        .bgimg-1, .bgimg-2, .bgimg-3 {
-            position: relative;
-            opacity: 1;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+    .fa-linkedin {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+    .fa-linkedin:hover {
+}
 
-        }
-        .bgimg-1 {
-            background-image: url("3.jpg");
-            min-height: 100%;
-        }
-        .bgimg-2 {
-            background-image: url("2.jpg");
-            min-height: 400px;
-        }
-        .bgimg-3 {
-            background-image: url("1.jpg");
-            min-height: 400px;
-        }
-        .caption {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
-        }
-        .caption span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px;
-        }
-        h3 {
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font: 20px "Lato", sans-serif;
-            color: #111;
-        }
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-            .bgimg-1, .bgimg-2, .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-        }
+    .break{
+        display:block;
+    }
+    body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+    }
+    .top-right{
+        position: absolute;
+        right: -1064px;
+        top: 0px;
+    }
 
-        input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-    </style>
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+    .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+    h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+</style>
 </head>
 <body>
 
-<div class="bgimg-1">
-    <div class=" w3-bar w3-pale-black">
-        <h1 class="w3-bar-item" style="cursor: default;font-family:'Arial Black' ;color: #111111; margin-left: 60px; margin-top: 5px">TINA <span class="break"></span> MOUAWAD</h1>
-        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="contact.html" class="w3-bar-item w3-right"
-           style="font-family: Verdana;color: goldenrod;
+<header class="black-circle parallax" style="min-height: 100%;">
+	<div class=" w3-bar w3-pale-black">
+		<h1 class="w3-bar-item" style="cursor: default;font-family:'Arial Black' ;color: #111111; margin-left: 60px; margin-top: 5px;">TINA <span class="break"></span> MOUAWAD</h1>
+		<a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="contact.html" class="w3-bar-item w3-right"
+		   style="text-decoration: none;font-family: Verdana;color: goldenrod;
         font-size: 20px; margin-right: 50px; margin-top: 38px"><b>Contact</b></a>
-        <a href="about.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"
-           class="w3-bar-item w3-right" style="font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px"><b>About</b></a>
-        <a style="font-family: Verdana;color: #111111;font-size: 20px; margin-right: 20px; margin-top: 38px;cursor: default" class="w3-bar-item  w3-right"><b>Home</b></a>
-        <!--href="index.html" class="w3-bar-item  w3-right"-->
-    </div>
-</div>
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;">Parallax Demo</h3>
-    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-</div>
+		<a href="about.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"
+		   class="w3-bar-item w3-right" style="text-decoration: none;font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px"><b>About</b></a>
+		<a style="text-decoration: none;font-family: Verdana;color: #111111;font-size: 20px; margin-right: 20px; margin-top: 38px;cursor: default" class="w3-bar-item  w3-right"><b>Home</b></a>
+	</div>
+</header>
 
-<div class="bgimg-2">
-    <div class="caption">
-        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
-    </div>
-</div>
-<div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    </div>
-</div>
+<section id="section1" class="ct-u-paddingBoth120" style="min-height: 100%;background-color: white">
+	<div class="container">
+		<div class="row">
+			<div class="container text-center">
+				<i class="fa fa-users"></i>
+				<h2 class="ct-section_header ct-section_header--type1">
+					Scrolling Parallax
+				</h2>
+				<p>
+					Using parallax to create depth has become commonplace in modern design trends. You can create unique templates that present your website information with a specific design edge.
+				</p><a href="#" class="btn btn-large btn-motive ct-u-marginTop70">Use Solodev's Parallax Integration Today</a>
+			</div>
+		</div>
+	</div>
+</section>
 
-<div class="bgimg-3">
-    <div class="caption">
-        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-    </div>
-</div>
-<div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    </div>
-</div>
+<section id="section2" class="black-circle ct-u-paddingBoth120" style="min-height: 100%">
+</section>
 
-<div class="bgimg-1">
-    <div class="caption">
-        <span class="border">COOL!</span>
-    </div>
-</div>
+
 <div class="footer-social-icons">
     <h4 class="_14" align="center" style="cursor: default;">Follow me on</h4>
     <ul id="navigation" class="social-icons" style="text-align: center;cursor: default">
@@ -260,6 +200,17 @@
     </ul>
 </div>
 
-</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('header').parallax({
+			imageSrc: '2.jpg'
+		});
 
+		$('#section2').parallax({
+			imageSrc: '3.jpg'
+		});
+	});
+</script>
+
+</body>
 </html>

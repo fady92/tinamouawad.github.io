@@ -2,19 +2,25 @@
 <html>
 <head>
     <title>Tina Mouawad</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="parallax.css" rel="stylesheet" type="text/css" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="tabicon.ico" style="visibility: visible">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.3.1/parallax.min.js"></script>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <style>
+
         @import url(https://fonts.googleapis.com/css?family=Lato);
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
         body {
             font-family: 'Lato', sans-serif;
             color: #FFF;
             background: #322f30;
-            -webkit-font-smoothing: antialiased;
+            -webkit-font-smoothing: subpixel-antialiased;
         }
         a {
             font: 20px "Lato", sans-serif;
@@ -112,7 +118,6 @@
 
         .break{
             display:block;
-            margin: -25px;
         }
         body, html {
             height: 100%;
@@ -125,27 +130,7 @@
             right: -1064px;
             top: 0px;
         }
-        .bgimg-1, .bgimg-2, .bgimg-3 {
-            position: relative;
-            opacity: 1;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
 
-        }
-        .bgimg-1 {
-            background-image: url("1.jpg");
-            min-height: 100%;
-        }
-        .bgimg-2 {
-            background-image: url("2.jpg");
-            min-height: 400px;
-        }
-        .bgimg-3 {
-            background-image: url("1.jpg");
-            min-height: 400px;
-        }
         .caption {
             position: absolute;
             left: 0;
@@ -167,83 +152,52 @@
             font: 20px "Lato", sans-serif;
             color: #111;
         }
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-            .bgimg-1, .bgimg-2, .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-        }
+        .center {
+            margin: auto;
+            position: relative;
+            text-align: center;
 
-        input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
         }
     </style>
 </head>
 <body>
 
-<div class="bgimg-1">
+<header class="black-circle parallax" style="min-height: 100%;">
     <div class="caption">
         <span style="cursor: default;font-size: 35px;font-family:'Arial Black'; color: black;"><b>ABOUT</b></span>
     </div>
     <div class=" w3-bar w3-pale-black">
         <h1 class="w3-bar-item" style="cursor: default;font-family:'Arial Black' ;color: #111111; margin-left: 60px; margin-top: 5px">TINA <span class="break"></span> MOUAWAD</h1>
-        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="contact.html" class="w3-bar-item w3-right"  style="font-family: Verdana;color: goldenrod;
+        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="contact.html" class="w3-bar-item w3-right"  style="text-decoration: none;font-family: Verdana;color: goldenrod;
         font-size: 20px; margin-right: 50px; margin-top: 38px"><b>Contact</b></a>
-        <a class="w3-bar-item w3-right" style="font-family: Verdana;color: black;font-size: 20px; margin-right: 20px; margin-top: 38px; cursor: default"><b>About</b></a>
-        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'" href="index.html" style="font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px" class="w3-bar-item  w3-right"><b>Home</b></a>
+        <a class="w3-bar-item w3-right" style="text-decoration:none;font-family: Verdana;color: black;font-size: 20px; margin-right: 20px; margin-top: 38px; cursor: default"><b>About</b></a>
+        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'" href="index.html" style="text-decoration: none;font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px" class="w3-bar-item  w3-right"><b>Home</b></a>
         <!--href="index.html" class="w3-bar-item  w3-right"-->
     </div>
-</div>
+</header>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;"> Welcome to the Turtle Girl! </h3>
-    <div style="padding-left: 230px;padding-right: 230px">
-        <p class="break" style="margin: 25px">
-            Why Turtle Girl? Think about the <a onclick="window.open('https://www.moralstories.org/the-rabbit-and-the-turtle/')" style="cursor:pointer;color: #777; font-size: 15px"><u>Rabbit and Turtle</u></a> tale. Consistency is my strength, and as you can tell I am not the fastest out there (a positive way to say that I'm relatively slow <a class="em-svg em-wink" style="display: inline-block;font-size: 11px"></a>).</div>
-    <div style="padding-left: 230px;padding-right: 230px">
-        <p class="break" style="margin: 25px">
-        My name is Antonia Mouawad, 22 years old, currently completing my masters in computer science at the University of Toronto. Not going to bug you with academics, don't worry.
-        </p>
+<section class="center" id="section1" style="background-color: white;padding-top: 0.1%">
+    <div style="padding-bottom: 1%;padding-top: 1%;width: 40%; margin: auto; position: relative;text-align: justify;">
+        <div style="position: static">
+        <h3 style="text-align:center;"> Welcome to the Turtle Girl! </h3>
+            <p class="break" style="">
+                Why Turtle Girl? Think about the <a onclick="window.open('https://www.moralstories.org/the-rabbit-and-the-turtle/')" style="cursor:pointer;color: #777; font-size: 15px"><u>Rabbit and Turtle</u></a> tale. Consistency is my strength, and as you can tell I am not the fastest out there (a positive way to say that I'm relatively slow <a class="em-svg em-wink" style="display: inline-block;font-size: 11px"></a>)
+            <p class="break" style="">
+                My name is Antonia Mouawad, 22 years old, currently completing my masters in computer science at the University of Toronto. Not going to bug you with academics, don't worry.
+            </p>
+
+            <p class="break" style="">
+                I started running to lose some weight in 2016 and guess what? A year later, running was my new lifestyle! I signed up for my first 10k race that year, then my second. After that, my best friend signed me up for <a onclick="window.open('http://www.beirutmarathon.org/542.php?id=programs1')"  style="cursor:pointer;color: #777; font-size: 15px"><u>542</u></a>, an amazing running training program in Lebanon and my brother got me registered for my first half marathon in October.
+            </p>
+
+            <p class="break" style="">
+                The goal of the current challenge is to give my training a deeper meaning by raising awareness against child abuse, and funds for """" that supports this goal. I will be running irrespective of the weather- which can be very challenging in Toronto- and of my schedule, 7 km every day for a full month. I will be posting my running logs daily, along with a paragraph/video/drawing (yes I draw as well) to come one step closer to protecting the children from abuse.
+                It's time to make every step count!
+                Support me by donating. Everyone can make a difference.</p>
+            <p class="break w3-large w3-serif"><i>"My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?" - David Mitchell, Cloud Atlas</i></p>
+        </div>
     </div>
-    <div style="padding-left: 230px;padding-right: 230px">
-        <p class="break" style="margin: 25px">
-    I started running to lose some weight in 2016 and guess what? A year later, running was my new lifestyle! I signed up for my first 10k race that year, then my second. After that, my best friend signed me up for <a onclick="window.open('http://www.beirutmarathon.org/542.php?id=programs1')"  style="cursor:pointer;color: #777; font-size: 15px"><u>542</u></a>, an amazing running training program in Lebanon and my brother got me registered for my first half marathon in October.
-        </p>
-    </div>
-    <div style="padding-left: 230px;padding-right: 230px">
-        <p class="break" style="margin: 25px">
-        The goal of the current challenge is to give my training a deeper meaning by raising awareness against child abuse, and funds for """" that supports this goal. I will be running irrespective of the weather- which can be very challenging in Toronto- and of my schedule, 7 km every day for a full month. I will be posting my running logs daily, along with a paragraph/video/drawing (yes I draw as well) to come one step closer to protecting the children from abuse.
-        It's time to make every step count!
-        Support me by donating. Everyone can make a difference.</p>
-    </div>
-    <div style="padding-left: 230px;padding-right: 230px">
-        <p class="break w3-large w3-serif" style="margin: -10px;padding-left: 33px;padding-right: 33px;"><i>"My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?" - David Mitchell, Cloud Atlas</i></p>
-    </div>
-</div>
+</section>
 
 <div class="footer-social-icons">
     <h4 class="_14" align="center" style="cursor: default;">Follow me on</h4>
@@ -257,6 +211,17 @@
     </ul>
 </div>
 
-</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('header').parallax({
+            imageSrc: '2.jpg'
+        });
 
+        $('#section2').parallax({
+            imageSrc: '3.jpg'
+        });
+    });
+</script>
+
+</body>
 </html>
