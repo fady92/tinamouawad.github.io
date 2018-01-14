@@ -13,14 +13,51 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.3.1/parallax.min.js"></script>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <style>
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #322f30;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: dimgrey;
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
 
         @import url(https://fonts.googleapis.com/css?family=Lato);
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
         body {
-            font-family: 'Lato', sans-serif;
-            color: #FFF;
+            /*font-family: 'Lato', sans-serif;*/
             background: #322f30;
             -webkit-font-smoothing: subpixel-antialiased;
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+        nav {
+            width:100%;
+            height:60px;
+            background: #292f36;
+            postion:fixed;
+            z-index:10;
         }
         a {
             font: 20px "Lato", sans-serif;
@@ -49,7 +86,14 @@
             color: #fff;
         }
         ul.social-icons {
-            margin-top: 10px;
+            position: fixed;
+            /*right: 0;*/
+            bottom: 0;
+            left: 0;
+            width: fit-content;
+            padding-right: 5px;
+            background-color: #322f30;
+            text-align: center;
         }
         .social-icons li {
             vertical-align: top;
@@ -68,11 +112,13 @@
             -webkit-transition:.5s;
             transition: .5s;
             background-color: #322f30;
+            font-size: 15px;
         }
         .fa-facebook:hover {
         }
 
         .fa-instagram {
+            font-size: 15px;
             -o-transition:.5s;
             -ms-transition:.5s;
             -moz-transition:.5s;
@@ -90,6 +136,7 @@
             -webkit-transition:.5s;
             transition: .5s;
             background-color: #322f30;
+            font-size: 15px;
         }
         .fa-twitter:hover {
         }
@@ -101,6 +148,7 @@
             -webkit-transition:.5s;
             transition: .5s;
             background-color: #322f30;
+            font-size: 15px;
         }
         .fa-youtube:hover {
         }
@@ -112,6 +160,7 @@
             -webkit-transition:.5s;
             transition: .5s;
             background-color: #322f30;
+            font-size: 15px;
         }
         .fa-linkedin:hover {
         }
@@ -119,7 +168,7 @@
         .break{
             display:block;
         }
-        body, html {
+        html {
             height: 100%;
             margin: 0;
             font: 400 15px/1.8 "Lato", sans-serif;
@@ -152,11 +201,8 @@
             font: 20px "Lato", sans-serif;
             color: #111;
         }
-        .center {
-            margin: auto;
-            position: relative;
-            text-align: center;
-
+        #honeypot {
+            display: none; /*makes the field not visible to humans*/
         }
     </style>
 </head>
@@ -164,51 +210,55 @@
 
 <header class="black-circle parallax" style="min-height: 100%;">
     <div class="caption">
-        <span style="cursor: default;font-size: 35px;font-family:'Arial Black'; color: black;"><b>ABOUT</b></span>
+        <span style="cursor: default;font-size: 2%;font-family:'Arial Black'; color: black;"><b>ABOUT</b></span>
     </div>
-    <div class=" w3-bar w3-pale-black">
-        <h1 class="w3-bar-item" style="cursor: default;font-family:'Arial Black' ;color: #111111; margin-left: 60px; margin-top: 5px">TINA <span class="break"></span> MOUAWAD</h1>
-        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="contact.html" class="w3-bar-item w3-right"  style="text-decoration: none;font-family: Verdana;color: goldenrod;
-        font-size: 20px; margin-right: 50px; margin-top: 38px"><b>Contact</b></a>
-        <a class="w3-bar-item w3-right" style="text-decoration:none;font-family: Verdana;color: black;font-size: 20px; margin-right: 20px; margin-top: 38px; cursor: default"><b>About</b></a>
-        <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'" href="index.html" style="text-decoration: none;font-family: Verdana;color: goldenrod;font-size: 20px; margin-right: 20px; margin-top: 38px" class="w3-bar-item  w3-right"><b>Home</b></a>
-        <!--href="index.html" class="w3-bar-item  w3-right"-->
-    </div>
+    <nav class="nav" style="background-color: transparent;border: none" data-spy="affix" >
+        <div class="w3-bar w3-pale-black">
+            <h1 class="w3-bar-item" style="cursor: default;font-family:'Arial' ;color: #111111; margin-left: 15px; margin-top: 5px;">TINA
+                <span class="break"></span> MOUAWAD</h1>
+            <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="contact.html" class="w3-bar-item w3-right"
+               style="text-decoration: none;font-family: Verdana;color: goldenrod; font-size: 15px; margin-right: 5px; margin-top: 15px"><b>Contact</b></a>
+            <a style="text-decoration: none;font-family: Verdana;color: #111111;font-size: 15px; margin-right: 5px;
+             margin-top: 15px;cursor: default" class="w3-bar-item  w3-right"><b>About</b></a>
+            <a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='goldenrod'"  href="index.html" class="w3-bar-item w3-right"
+               style="text-decoration: none;font-family: Verdana;color: goldenrod; font-size: 15px; margin-right: 5px; margin-top: 15px"><b>Home</b></a>
+        </div>
+    </nav>
 </header>
 
-<section class="center" id="section1" style="background-color: white;padding-top: 0.1%">
-    <div style="padding-bottom: 1%;padding-top: 1%;width: 40%; margin: auto; position: relative;text-align: justify;">
-        <div style="position: static">
+<section  id="section1" style="background-color: white; min-height: 100%">
+    <div style="padding-bottom: 3%;padding-top: 6%;width: 50%; margin: auto; vertical-align: center;text-align: justify;">
         <h3 style="text-align:center;"> Welcome to the Turtle Girl! </h3>
-            <p class="break" style="">
-                Why Turtle Girl? Think about the <a onclick="window.open('https://www.moralstories.org/the-rabbit-and-the-turtle/')" style="cursor:pointer;color: #777; font-size: 15px"><u>Rabbit and Turtle</u></a> tale. Consistency is my strength, and as you can tell I am not the fastest out there (a positive way to say that I'm relatively slow <a class="em-svg em-wink" style="display: inline-block;font-size: 11px"></a>)
-            <p class="break" style="">
+            <br>
+            <p class="" style="">
+                Why Turtle Girl? Think about the <a onclick="window.open('https://www.moralstories.org/the-rabbit-and-the-turtle/')" style="cursor:pointer;color: #777; font-size: 15px"><u>Rabbit and Turtle</u></a> tale. Consistency is my strength, and as you can tell I am not the fastest out there (a positive way to say that I'm relatively slow <a class="em-svg em-wink" style="display: inline-block;font-size: 11px"></a>).
+            <p class="" style="">
                 My name is Antonia Mouawad, 22 years old, currently completing my masters in computer science at the University of Toronto. Not going to bug you with academics, don't worry.
             </p>
 
-            <p class="break" style="">
+            <p class="" style="">
                 I started running to lose some weight in 2016 and guess what? A year later, running was my new lifestyle! I signed up for my first 10k race that year, then my second. After that, my best friend signed me up for <a onclick="window.open('http://www.beirutmarathon.org/542.php?id=programs1')"  style="cursor:pointer;color: #777; font-size: 15px"><u>542</u></a>, an amazing running training program in Lebanon and my brother got me registered for my first half marathon in October.
             </p>
 
-            <p class="break" style="">
+            <p class="" style="">
                 The goal of the current challenge is to give my training a deeper meaning by raising awareness against child abuse, and funds for """" that supports this goal. I will be running irrespective of the weather- which can be very challenging in Toronto- and of my schedule, 7 km every day for a full month. I will be posting my running logs daily, along with a paragraph/video/drawing (yes I draw as well) to come one step closer to protecting the children from abuse.
                 It's time to make every step count!
                 Support me by donating. Everyone can make a difference.</p>
-            <p class="break w3-large w3-serif"><i>"My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?" - David Mitchell, Cloud Atlas</i></p>
-        </div>
+            <p class=" w3-large w3-serif"><i>"My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?" - David Mitchell, Cloud Atlas</i></p>
     </div>
 </section>
 
-<div class="footer-social-icons">
-    <h4 class="_14" align="center" style="padding-top: 2%;cursor: default;">Follow me on</h4>
-    <ul id="navigation" class="social-icons" style="text-align: center;cursor: default">
-        <li style="padding: 5px"><a onclick="window.open('https://www.facebook.com/touty')" class="social-icon" style="cursor:pointer"> <i class="fab fa-facebook"></i></a></li>
-        <li style="padding: 5px"><a onclick="window.open('https://www.instagram.com/antonia_md/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-instagram"></i></a></li>
-        <li style="padding: 5px"><a onclick="window.open('https://twitter.com/AntoniaMouawad/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-twitter"></i></a></li>
-        <li style="padding: 5px"><a onclick="window.open('https://www.youtube.com/channel/UCVv2LN0E6w_ux-tryU7dbvg/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-youtube"></i></a></li>
-        <li style="padding: 5px"><a onclick="window.open('https://www.linkedin.com/in/antoniamouawad/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-linkedin"></i></a></li>
-        <li style="padding: 5px"><a onclick="window.open('https://www.strava.com/athletes/23476301?oq=antonia%20mouawad/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-strava"></i></a></li>
-    </ul>
+<ul id="navigation" class="social-icons" style="text-align: center;cursor: default;">
+    <li  style="cursor: default;padding-left: 3px; text-align: center">Follow me on </li>
+    <li style="padding-left: 3px;"><a onclick="window.open('https://www.facebook.com/touty')" class="social-icon" style="cursor:pointer;"> <i class="fab fa-facebook"></i></a></li>
+    <li style="padding-left: 3px"><a onclick="window.open('https://www.instagram.com/antonia_md/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-instagram"></i></a></li>
+    <li style="padding-left: 3px"><a onclick="window.open('https://twitter.com/AntoniaMouawad/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-twitter"></i></a></li>
+    <li style="padding-left: 3px"><a onclick="window.open('https://www.youtube.com/channel/UCVv2LN0E6w_ux-tryU7dbvg/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-youtube"></i></a></li>
+    <li style="padding-left: 3px"><a onclick="window.open('https://www.linkedin.com/in/antoniamouawad/')" class="social-icon" style="cursor:pointer"> <i class="fab fa-linkedin"></i></a></li>
+    <li style="padding-left: 3px"><a onclick="window.open('https://www.strava.com/athletes/23476301?oq=antonia%20mouawad/')" class="social-icon" style="cursor:pointer;font-size: 15px;"> <i class="fab fa-strava"></i></a></li>
+</ul>
+<div class="" style="height: 39px; text-align: center">
+    <p style="text-align: center;">test</p>
 </div>
 
 <script type="text/javascript">
